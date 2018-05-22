@@ -19,5 +19,7 @@
     "socket.io": "^2.0.3",
     "nodemon": "^1.17.4",
     "yargs": "*"
-  }
+  },
+  "build": "NPM_CONFIG_PRODUCTION=false npm install ",
+  "heroku-postbuild": "npm run build",
 }
