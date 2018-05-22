@@ -1,6 +1,6 @@
 var botui = new BotUI('api-bot');
 
-var port = normalizePort(process.env.PORT);
+var port = process.env.PORT;
 var socket = io.connect('https://software-engineering-chatbot1.herokuapp.com:port');
 
 socket.removeAllListeners();
