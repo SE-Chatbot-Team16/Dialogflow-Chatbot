@@ -1,6 +1,6 @@
 var botui = new BotUI('api-bot');
 
-var socket = io.connect(window.location.hostname);
+var socket = io.connect("https://software-engineering-chatbot1.herokuapp.com:3000");
 
 socket.removeAllListeners();
 botui.message.add({
