@@ -6,9 +6,8 @@ var api = require('./api');
 var mongoose = require('mongoose');
 
 //socket.io connect
-const PORT = process.env.PORT || 3000;
 var conn = function() {
-  server.listen(PORT);
+  server.listen(8010);
   app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
   });
