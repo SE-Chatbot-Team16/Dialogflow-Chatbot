@@ -13,10 +13,7 @@ var conn = function() {
     res.sendfile(__dirname + '/index.html');
   });
 };
-io.configure(function () { 
-  io.set("transports", ["xhr-polling"]); 
-  io.set("polling duration", 10); 
-});
+
 //return from server and pass to botui
 var fromClient = function() {
   io.on('connection', function (socket) {
